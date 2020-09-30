@@ -1,0 +1,15 @@
+// ==========================================================================
+// Colors
+// ==========================================================================
+$theme-colors: () !default;
+$theme-colors: map_merge(('theme-primary': #FBA1AB,
+        'theme-secondary': #87D1DE,
+        'theme-text': #6F6F6F,
+        'theme-white': #fff,
+    ), $theme-colors);
+
+$background-colors : ('background-gray-1': #F5F5F5,
+    'background-gray-2': #F8F8F8,
+    'background-blue-1': #B7DFE9,
+    'background-blue-2': #87D1DE,
+);

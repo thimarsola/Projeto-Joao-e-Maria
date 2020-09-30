@@ -1,3 +1,3 @@
-# estrutura_mvc
-# Projeto-Joao-e-Maria
-# Projeto-Joao-e-Maria
+# Projeto Website João&Maria
+
+Estrutura padrão W3C

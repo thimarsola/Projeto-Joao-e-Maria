@@ -1,0 +1,20 @@
+{
+  "name": "projeto-joao-e-maria",
+  "version": "1.0.0",
+  "description": "Projeto Website João&Maria",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass ./public/assets/scss/:./public/assets/css/ --watch",
+    "server": "browser-sync -f . --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thimarsola/Projeto-Joao-e-Maria.git"
+  },
+  "author": "Thiago Marsola (https://github.com/thimarsola) | Agência Goognet Solução Digital (https://goognet.com.br)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thimarsola/Projeto-Joao-e-Maria/issues"
+  },
+  "homepage": "https://github.com/thimarsola/Projeto-Joao-e-Maria#readme"
+}
