@@ -12,12 +12,12 @@ define("DEV", [
  * SITE CONFIG
  */
 define("SITE",[
-    "name" => "Goognet Solução Digital",
-    "desc" => "Goognet Solução Digital",
+    "name" => "João&Maria | Assessória de eventos",
+    "desc" => "Somos uma empresa de Assessoria & Organização de eventos sociais!",
     "domain" => "goognet.com.br",
     "locale" => "pt_BR",
     "lang" =>  "pt-BR",
-    "root" => "https://localhost/desenvolvimento/cursos/est_mvc"
+    "root" => "https://localhost/desenvolvimento/Sites/Projeto-Joao-e-Maria"
 ]);
 
 /**

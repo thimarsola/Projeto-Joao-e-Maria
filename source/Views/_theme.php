@@ -21,24 +21,23 @@
         <link rel="shortcut icon" href="<?= asset("/img/favicon.ico"); ?>" />
 
         <!--CSS-->
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;600&display=swap" rel="stylesheet">
         <?= $v->section("stylesheet"); ?>
     </head>
     <body id="home">
-        
+
         <!--header-->
         <header class="header"></header>
         <!--end of header-->
-        
+
         <!--main-->
         <main class="main">
             <?= $v->section("content"); ?>
         </main>
         <!--end of main-->
-        
+
         <!--footer-->
         <footer class="footer">
-            <h2>teste</h2>
         </footer>
         <!--end of footer-->
 
