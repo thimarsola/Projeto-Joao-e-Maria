@@ -1,0 +1,72 @@
+#history{
+    @include margin;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+
+        .history__image{
+            flex-basis: 40%;
+            width: 100%;
+            height: auto;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object:{
+                    fit: cover;
+                    postion:  center;
+                }
+            }
+        }
+
+        .history__content{
+            flex-basis: 60%;
+            padding: 8rem 3rem;
+            width: 100%;
+
+            .history__header{
+                margin-bottom: 1.6rem;
+                h1{
+                    @include marginSet;
+                    font:{
+                        family: 'Raleway', sans-serif !important;
+                        size: 2.4rem;
+                        weight: 600;
+                    }
+                    text:{
+                        transform: uppercase;
+                    }
+                    color: var(--color-theme-primary);
+                }
+            }
+
+            & > p:nth-child(2){
+                margin-bottom: 3.2rem;
+                font:{
+                    family: 'Playfair Display', serif !important;
+                    size: 3.2rem;
+                }
+                line-height: 1.2;
+            }
+
+            p{
+                @include marginSet;
+
+                font:{
+                    size: 1.6rem;
+                }
+                text:{
+                    align: justify;
+                }
+            }
+            
+            .history__content__button{
+                margin-top: 7rem;
+            }
+        }
+
+    }
+}
