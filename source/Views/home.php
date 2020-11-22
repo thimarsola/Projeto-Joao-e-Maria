@@ -114,6 +114,78 @@
 
         </div>
         <!--end of content-->
-        </div>
+    </div>
 </section>
 <!--end of history-->
+
+<!--specialties-->
+<section id="especialidades">
+    <div class="container">
+        
+        <!--container-->
+        <div class="specialties__container">
+            
+            <!--header-->
+            <header class="specialties__container__header">
+                <h1>Nossas especialidades</h1>
+            </header>
+            <!--end of container-->
+            
+            <div class="specialties__container__content">
+                <p><span>Assessoria para todos os momentos</span></p>
+                <p>Nossos serviços vão além de uma simples assessoria, cuidamos de todos os detalhes com muito amor e dedicação!</p>
+            </div>
+            
+        </div>
+        <!--end of container-->
+        
+        <!--grid-->
+        <div class="specialties__grid">
+            
+            <!--card-->
+            <article class="specialties__grid__card">
+                <img src="<?= asset("img/vt-casamento.svg"); ?>" alt="Vetor Casamento">
+                <h2>Casamentos</h2>
+            </article>
+            <!--end of card-->
+            
+            <!--card-->
+            <article class="specialties__grid__card">
+                <img src="<?= asset("img/vt-debutante.svg"); ?>" alt="Vetor Debutante">
+                <h2>Debutante</h2>
+            </article>
+            <!--end of card-->
+            
+            <!--card-->
+            <article class="specialties__grid__card">
+                <img src="<?= asset("img/vt-bodas.svg"); ?>" alt="Vetor Bodas">
+                <h2>Bodas</h2>
+            </article>
+            <!--end of card-->
+            
+            <!--card-->
+            <article class="specialties__grid__card">
+                <img src="<?= asset("img/vt-aniversario.svg"); ?>" alt="Vetor Aniversário">
+                <h2>Aniversário</h2>
+            </article>
+            <!--end of card-->
+            
+            <!--card-->
+            <article class="specialties__grid__card">
+                <img src="<?= asset("img/vt-corporativo.svg"); ?>" alt="Vetor Corporativo">
+                <h2>Corporativo</h2>
+            </article>
+            <!--end of card-->
+            
+            <!--card-->
+            <article class="specialties__grid__card">
+                <img src="<?= asset("img/vt-despedida.svg"); ?>" alt="Vetor Despedida de Solteiro">
+                <h2>Despedida de<br>Solteiro(a)</h2>
+            </article>
+            <!--end of card-->
+            
+        </div>
+        <!--end of grid-->
+    </div>
+</section>
+<!--end of specialties-->
