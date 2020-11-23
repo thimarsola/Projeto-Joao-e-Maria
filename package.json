@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/thimarsola/Projeto-Joao-e-Maria/issues"
   },
-  "homepage": "https://github.com/thimarsola/Projeto-Joao-e-Maria#readme"
+  "homepage": "https://github.com/thimarsola/Projeto-Joao-e-Maria#readme",
+  "devDependencies": {
+    "lightbox": "^0.5.0",
+    "lightbox2": "^2.11.3"
+  }
 }

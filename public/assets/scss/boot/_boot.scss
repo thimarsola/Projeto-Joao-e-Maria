@@ -73,6 +73,11 @@ html {
         }
     }
 }
+
+.d-none{
+    display: none;
+}
+
 /*includes*/
 @mixin margin {
     margin : 0;
@@ -86,6 +91,7 @@ html {
 
 /*Container*/
 .container {
+    display: block;
     margin : 0 auto;
     padding: 0 3.2rem;
     width  : 100%;

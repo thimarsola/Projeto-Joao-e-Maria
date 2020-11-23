@@ -44,10 +44,14 @@ html {
     font-size: 4.6rem;
     font-family: 'Playfair Display', serif !important; }
 
+.d-none {
+  display: none; }
+
 /*includes*/
 /*end of includes*/
 /*Container*/
 .container {
+  display: block;
   margin: 0 auto;
   padding: 0 3.2rem;
   width: 100%; }
@@ -403,5 +407,115 @@ html {
         font-size: 2.4rem;
         font-weight: 300;
         text-align: center; }
+
+#servicos {
+  background-color: var(--color-background-gray-2); }
+  #servicos::before {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 30rem;
+    background-image: url("../img/bg-services.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; }
+  #servicos .services__header {
+    padding-top: 8rem; }
+    #servicos .services__header h1 {
+      margin-bottom: 1rem;
+      padding: 0;
+      color: var(--color-theme-secondary);
+      text-align: center; }
+    #servicos .services__header .services__header__image {
+      width: 100%;
+      margin-bottom: 3.4rem; }
+      #servicos .services__header .services__header__image img {
+        width: auto;
+        margin: 0 auto;
+        display: block; }
+  #servicos .services__content p {
+    text-align: center; }
+  #servicos .services__content .services__content__grid {
+    padding: 8rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 3rem; }
+    #servicos .services__content .services__content__grid .services__content__grid__article {
+      background-color: var(--color-theme-white);
+      box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.15); }
+      #servicos .services__content .services__content__grid .services__content__grid__article img {
+        width: 100%;
+        height: auto; }
+      #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content {
+        margin: 0;
+        padding: 3.2rem; }
+        #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content .services__content__grid__article__content__header h2 {
+          margin-bottom: 2.2rem;
+          padding: 0;
+          font-family: 'Raleway', sans-serif !important;
+          font-size: 2.4rem;
+          font-weight: 400;
+          color: var(--color-theme-secondary);
+          text-align: center; }
+        #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content p {
+          margin: 0;
+          padding: 0;
+          font-size: 1.4rem;
+          text-align: justify; }
+    #servicos .services__content .services__content__grid .services__content__grid__image img {
+      width: 100%;
+      height: auto; }
+
+#galeria {
+  margin: 0;
+  padding: 10rem 0; }
+  #galeria .gallery__header {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 4.5rem; }
+    #galeria .gallery__header h1 {
+      margin: 0 0 1.6rem 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif !important;
+      font-size: 2.4rem;
+      font-weight: 600;
+      text-align: justify !important;
+      text-transform: uppercase;
+      color: var(--color-theme-primary); }
+    #galeria .gallery__header p {
+      margin: 0;
+      padding: 0;
+      font-family: 'Playfair Display', serif !important;
+      font-size: 3.8rem;
+      font-weight: 400; }
+  #galeria .gallery__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 28rem);
+    grid-gap: 1.5rem; }
+    #galeria .gallery__content .gallery__content__image {
+      transform: scale(1);
+      transition: transform .2s ease-in-out; }
+      #galeria .gallery__content .gallery__content__image:nth-child(even):hover {
+        transform: scale(0.95) rotate(1deg);
+        transition: transform .2s ease-in-out; }
+      #galeria .gallery__content .gallery__content__image:nth-child(odd):hover {
+        transform: scale(0.95) rotate(-1deg);
+        transition: transform .2s ease-in-out; }
+      #galeria .gallery__content .gallery__content__image:nth-child(1) {
+        grid-column: 1/3; }
+      #galeria .gallery__content .gallery__content__image:nth-child(6) {
+        grid-column: 3/5; }
+      #galeria .gallery__content .gallery__content__image:nth-child(7) {
+        grid-column: 1/3; }
+      #galeria .gallery__content .gallery__content__image:nth-child(12) {
+        grid-column: 3/5; }
+      #galeria .gallery__content .gallery__content__image a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center; }
 
 /*# sourceMappingURL=styles.css.map */

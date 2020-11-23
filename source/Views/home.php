@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="<?= asset("css/style.min.css"); ?>" />
 <?= $v->end; ?>
 
+<h1 class="d-none">João&Maria Assessoria e Organização de eventos sociais</h1>
+
 <!-- hero -->
 <section id="home">
     <div class="container">
@@ -121,71 +123,288 @@
 <!--specialties-->
 <section id="especialidades">
     <div class="container">
-        
+
         <!--container-->
         <div class="specialties__container">
-            
+
             <!--header-->
             <header class="specialties__container__header">
                 <h1>Nossas especialidades</h1>
             </header>
             <!--end of container-->
-            
+
             <div class="specialties__container__content">
                 <p><span>Assessoria para todos os momentos</span></p>
                 <p>Nossos serviços vão além de uma simples assessoria, cuidamos de todos os detalhes com muito amor e dedicação!</p>
             </div>
-            
+
         </div>
         <!--end of container-->
-        
+
         <!--grid-->
         <div class="specialties__grid">
-            
+
             <!--card-->
             <article class="specialties__grid__card">
                 <img src="<?= asset("img/vt-casamento.svg"); ?>" alt="Vetor Casamento">
                 <h2>Casamentos</h2>
             </article>
             <!--end of card-->
-            
+
             <!--card-->
             <article class="specialties__grid__card">
                 <img src="<?= asset("img/vt-debutante.svg"); ?>" alt="Vetor Debutante">
                 <h2>Debutante</h2>
             </article>
             <!--end of card-->
-            
+
             <!--card-->
             <article class="specialties__grid__card">
                 <img src="<?= asset("img/vt-bodas.svg"); ?>" alt="Vetor Bodas">
                 <h2>Bodas</h2>
             </article>
             <!--end of card-->
-            
+
             <!--card-->
             <article class="specialties__grid__card">
                 <img src="<?= asset("img/vt-aniversario.svg"); ?>" alt="Vetor Aniversário">
                 <h2>Aniversário</h2>
             </article>
             <!--end of card-->
-            
+
             <!--card-->
             <article class="specialties__grid__card">
                 <img src="<?= asset("img/vt-corporativo.svg"); ?>" alt="Vetor Corporativo">
                 <h2>Corporativo</h2>
             </article>
             <!--end of card-->
-            
+
             <!--card-->
             <article class="specialties__grid__card">
                 <img src="<?= asset("img/vt-despedida.svg"); ?>" alt="Vetor Despedida de Solteiro">
                 <h2>Despedida de<br>Solteiro(a)</h2>
             </article>
             <!--end of card-->
-            
+
         </div>
         <!--end of grid-->
     </div>
 </section>
 <!--end of specialties-->
+
+<!--services-->
+<section id="servicos">
+    <div class="container">
+
+        <!--header-->
+        <header class="services__header">
+            <h1>Nossos Serviços</h1>
+
+            <!--image-->
+            <div class="services__header__image">
+                <img src="<?= asset("img/vt-divider.svg"); ?>" alt="Vetor Divisor">            
+            </div>
+            <!--end of image-->
+
+        </header>
+        <!--end of header-->
+
+        <!--content-->
+        <div class="services__content">
+            <p>Possuímos três planos de altíssimo valor, com certeza um deles está dentro do seu perfil e isso gerará transformação no seu evento.</p>
+
+            <!--grid-->
+            <div class="services__content__grid">
+
+                <!--article-->
+                <article class="services__content__grid__article">
+                    <img src="<?= asset("img/img-assessoria-completa.jpg"); ?>" alt="João&Maria - Serviços - Assessoria Completa">
+
+                    <!--content-->
+                    <div class="services__content__grid__article__content">
+                        <!--header-->
+                        <header class="services__content__grid__article__content__header">
+                            <h2>Assessoria Completa</h2>
+                        </header>
+                        <!--end of header-->
+
+                        <p>Ideal para os clientes que necessitam de ajuda especializada para realizar as contratações de fornecedores do seu evento. Neste plano, além de todo o suporte dado no dia do evento (plano assessoria final), nós da João&Maria Assessoria participamos de TODAS as contratações. Realizamos o processo de busca, cotação, negociação e fechamento. </p>
+                    </div>
+                    <!--end of content-->
+
+                </article>
+                <!--end of article-->
+
+                <!--article-->
+                <article class="services__content__grid__article">
+                    <img src="<?= asset("img/img-assessoria-personalizada.jpg"); ?>" alt="João&Maria - Serviços - Assessoria Personalizada">
+
+                    <!--content-->
+                    <div class="services__content__grid__article__content">
+                        <!--header-->
+                        <header class="services__content__grid__article__content__header">
+                            <h2>Assessoria Personalizada</h2>
+                        </header>
+                        <!--end of header-->
+
+                        <p>Ideal para os clientes que necessitam de ajuda especializada para realizar as contratações de alguns fornecedores específicos do seu evento. Além de todo o suporte no dia do evento (plano assessoria final), nós da João&Maria Assessoria participamos de ALGUMAS contratações, escolhidas de acordo com a necessidade. Realizamos o processo de busca, cotação, negociação e fechamento.</p>
+                    </div>
+                    <!--end of content-->
+
+                </article>
+                <!--end of article-->
+
+                <!--article-->
+                <article class="services__content__grid__article">
+                    <img src="<?= asset("img/img-assessoria-final.jpg"); ?>" alt="João&Maria - Serviços - Assessoria Final">
+
+                    <!--content-->
+                    <div class="services__content__grid__article__content">
+                        <!--header-->
+                        <header class="services__content__grid__article__content__header">
+                            <h2>Assessoria Final</h2>
+                        </header>
+                        <!--end of header-->
+
+                        <p>Ideal para os clientes que já contrataram ou pretendem contratar os fornecedores por conta própria. Nesse plano, nós da João&Maria Assessoria fazemos o acompanhamento remoto do evento através do grupo em aplicativo, onde damos dicas e orientações. Mais próximo à data do evento, realizamos reuniões primordiais para maior compreensão do evento (Visita técnica, Cronograma), passando a nos tornar assim, os olhos dos nossos clientes. No dia do evento, acompanhamos a montagem da cerimônia e da recepção para garantir que tudo seja feito conforme o que foi combinado e contratado. Organizamos e conduzimos todo o cerimonial, tornando este momento o mais lindo e emocionante possível. Conduzimos também a recepção (festa) sempre otimizando o tempo, para que tudo seja aproveitado ao máximo.</p>
+                    </div>
+                    <!--end of content-->
+
+                </article>
+                <!--end of article-->
+
+                <!--image-->
+                <div class="services__content__grid__image">
+                    <img src="<?= asset("img/img-services.jpg"); ?>" alt="João&Maria - Serviços">
+                </div>
+                <!--end of image-->
+
+            </div>
+            <!--end of grid-->
+        </div>
+        <!--end of content-->
+
+    </div>
+</section>
+<!--end of services-->
+
+<!--gallery-->
+<section id="galeria">
+    <div class="container">
+
+        <!--header-->
+        <header class="gallery__header">
+            <h1>Nossos trabalhos</h1>
+            <p>Algumas histórias que ajudamos a escrever!</p>
+        </header>
+        <!--end of header-->
+
+        <!--content-->
+        <div class="gallery__content">
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-01.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-01.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-02.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-02.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-03.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-03.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-04.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-04.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-05.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-05.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-06.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-06.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-07.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-07.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-08.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-08.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-09.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-09.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-10.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-10.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-11.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-11.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+            <!--image-->
+            <div class="gallery__content__image">
+                <a href="<?= asset("img/img-evento-12.jpg"); ?>" data-lightbox="gallery">
+                    <img src="<?= asset("img/img-evento-12.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                </a>
+            </div>
+            <!--end of image-->
+
+        </div>
+        <!--end of content-->
+
+    </div>
+</section>
+<!--end of gallery-->
+
+<?= $v->start("scripts"); ?>
+<script src="<?= asset("js/main.min.js"); ?>"></script>
+<?= $v->end; ?>
