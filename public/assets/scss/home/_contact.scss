@@ -1,0 +1,55 @@
+#contato{
+    @include margin;
+
+    .contact__header{
+        margin-bottom: 6rem;
+
+        h1{
+            margin: 0 0 1.6rem 0;
+            padding: 0;
+            font:{
+                family: 'Raleway', sans-serif !important;
+                size: 2.4rem;
+                weight: 600;
+            }
+            text:{
+                align: justify !important;
+                transform: uppercase;
+            }
+            color: var(--color-theme-primary);
+        }
+
+        p{
+            @include marginSet;
+            font:{
+                family: 'Playfair Display', serif !important;
+                size: 3.8rem;
+                weight: 400;
+            }
+        }
+    }
+
+    .contact__form{
+        width: 100% !important;
+
+        form{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(calc(50% - 30px), 1fr));
+            gap: 2rem;
+
+
+            .contact__form__input{
+                @include marginSet;
+                
+                input{
+                    padding: .8rem;
+                    width: 100%;
+                    border: none !important;
+                    border-bottom: 1px solid 
+                }
+            }
+
+        }
+    }
+}

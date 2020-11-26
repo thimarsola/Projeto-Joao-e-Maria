@@ -522,6 +522,95 @@
 </section>
 <!--end of testimony-->
 
+<section id="contato">
+    <div class="container">
+
+        <!--header-->
+        <header class="contact__header">
+            <h1>Fale conosco</h1>
+            <p>Juntos realizaremos o seu sonho!</p>
+        </header>
+        <!--end of header-->
+
+        <!--form-->
+        <div class="contact__form">
+            <form action="post">
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input type="text" name="name" placeholder="Insira seu nome e sobrenome">
+                </div>
+                <!--end of input-->
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input type="email" name="mail" placeholder="Insira seu melhor e-mail">
+                </div>
+                <!--end of input-->
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input list="event" name="eventList" placeholder="Qual o tipo de evento?">
+
+                    <datalist id="event">
+                        <option value="Casamento">
+                        <option value="Debutante">
+                        <option value="Evento Corporativo">
+                        <option value="Outros">
+                    </datalist>
+                </div>
+                <!--end of input-->
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input type="text" name="whatsapp" placeholder="Whatsapp">
+                </div>
+                <!--end of input-->
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input type="date" name="date" placeholder="Qual a data do evento?">
+                </div>
+                <!--end of input-->
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input type="text" name="phone" placeholder="Telefone">
+                </div>
+                <!--end of input-->
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input type="text" name="amountPeople" placeholder="Qual a quantidade de pessoas? (Quantidade total, adultos, crianças, etc)">
+                </div>
+                <!--end of input-->
+
+                <!--input-->
+                <div class="contact__form__input">
+                    <input type="text" name="place" placeholder="Qual o local do evento? (Cerimônia e recepção)">
+                </div>
+                <!--end of input-->
+
+                <!--text area-->
+                <div class="contact__form__textArea">
+                    <textarea name="message" rows="4" placeholder="Observações"></textarea>
+                </div>
+                <!--end of text area-->
+
+                <!--button-->
+                <div class="contact__form__button">
+                    <button type="submit" class="btn btn--outline-theme-primary">Enviar Contato</button>
+                </div>
+                <!--end of button-->
+
+
+            </form>
+        </div>
+        <!--end of form-->
+
+    </div>
+</section>
+
 <?= $v->start("scripts"); ?>
 <script src="<?= asset("js/main.min.js"); ?>"></script>
 <?= $v->end; ?>
