@@ -405,6 +405,123 @@
 </section>
 <!--end of gallery-->
 
+<!--testimony-->
+<section id="testimony">
+    <div class="container">
+
+        <!--header-->
+        <header class="testimony__header">
+            <h1>Depoimentos</h1>
+
+            <!--image-->
+            <div class="testimony__header__image">
+                <img src="<?= asset("img/vt-divider.svg"); ?>" alt="Vetor Divisor">            
+            </div>
+            <!--end of image-->
+        </header>
+        <!--end of header-->
+
+        <!--content-->
+        <div class="testimony__content">
+            <p>Veja abaixo o que os nossos clientes e amigos contam sobre o nosso trabalho!</p>
+
+            <!--row-->
+            <div class="testimony__content__row">
+
+                <!--card-->
+                <div class="testimony__content__row__card">
+
+                    <!--image-->
+                    <div class="testimony__content__row__card__image">
+                        <img src="<?= asset("img/img-depoimento-01.jpg"); ?>" alt="Depoimento João&Maria - Casamento Élide e Douglas">
+                    </div>
+                    <!--end of image-->
+
+                    <!--name-->
+                    <div class="testimony__content__row__card__name">
+                        <p>Noiva Élide<br>(Casamento Élide e Douglas)</p>
+                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" alt="Vetor Divisor">    
+                    </div>
+                    <!--end of name-->
+
+                    <!--text-->
+                    <div class="testimony__content__row__card__text">
+                        <p class="text-bold">Recomendaria mil vezes!</p>
+                        <p>Sem dúvida a melhor escolha! Hoje olho para o nosso casamento e não consigo imaginar como teria sido sem eles. Trazem tranquilidade, organização, fazem com que cada segundo aconteça da forma que sonhamos, com eles sentimos como se nosso casamento fosse único, e não só mais um. São atenciosos, estão disponíveis para ajudar a todo momento. O trabalho é impecável, além de tudo isso são incríveis como pessoa! No início contratar uma assessoria não fazia parte dos nossos planos, mais aos poucos fomos sentindo a necessidade. Foram só elogios no nosso casamento, e sabemos que parte disso se deve ao trabalho deles! Somos eternamente gratos por ter profissionais tão bons ao nosso lado.</p>
+                    </div>
+                    <!--end of text-->
+
+                </div>
+                <!--end of card-->
+
+                <!--card-->
+                <div class="testimony__content__row__card">
+
+                    <!--image-->
+                    <div class="testimony__content__row__card__image">
+                        <img src="<?= asset("img/img-depoimento-02.jpg"); ?>" alt="Depoimento João&Maria - Casamento Adriana e Cesar">
+                    </div>
+                    <!--end of image-->
+
+                    <!--name-->
+                    <div class="testimony__content__row__card__name">
+                        <p>Noiva Adriana<br>(Casamento Adriana e Cesar)</p>
+                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" alt="Vetor Divisor">    
+                    </div>
+                    <!--end of name-->
+
+                    <!--text-->
+                    <div class="testimony__content__row__card__text">
+                        <p class="text-bold">J&M equipe nota 10</p>
+                        <p>A equipe J&M é de longe a melhor equipe de assessoria que alguém poderia ter. São profissionais de excelente qualidade, receptivos e estão sempre abertos a sugestões. A Juliana e o André sempre fazerem o possível para atender as nossas demandas e realizar os nossos desejos. Posso dizer que a equipe J&M são pessoas que amam o que faz, estão sempre atualizados e atentos a cada detalhe. Eles estiveram ao nosso lado o tempo todo, independente do dia e do horário, até o grande dia. Recebemos vários elogios, tanto da cerimônia quanto da festa, elogios que devemos também a eles. Recomendamos fortemente a equipe J&M Assessoria.</p>
+                    </div>
+                    <!--end of text-->
+
+                </div>
+                <!--end of card-->
+
+                <!--card-->
+                <div class="testimony__content__row__card">
+
+                    <!--image-->
+                    <div class="testimony__content__row__card__image">
+                        <img src="<?= asset("img/img-depoimento-03.jpg"); ?>" alt="Depoimento João&Maria - Casamento Luciana e Carlos">
+                    </div>
+                    <!--end of image-->
+
+                    <!--name-->
+                    <div class="testimony__content__row__card__name">
+                        <p>Noiva Luciana<br>(Casamento Luciana e Carlos)</p>
+                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" alt="Vetor Divisor">    
+                    </div>
+                    <!--end of name-->
+
+                    <!--text-->
+                    <div class="testimony__content__row__card__text">
+                        <p class="text-bold">Impecáveis, assessoria nota 10</p>
+                        <p>Atenção e profissionalismo. Foram impecáveis no dia do casamento, verificando todo o contratado, orientando pais e padrinhos, antecipando-se a imprevistos. Reuniões precisas com informações e dicas antes do casamento. Contato e coordenação de todos os fornecedores, com antecedência. Ao final, guardaram todos os nossos pertences com zelo. Convidados adoraram a simpatia e presteza. Foram detalhistas e agradáveis. Obrigada pelo atendimento! Ficarão em nossa história! Sucesso!</p>
+                    </div>
+                    <!--end of text-->
+
+                </div>
+                <!--end of card-->
+
+            </div>
+            <!--end of row-->
+
+            <!--button-->
+            <div class="testimony__content__button">
+                <a href="https://www.casamentos.com.br/cerimonialista/joao-&-maria-assessoria-de-eventos--e220208" class="btn btn--outline-theme-primary" target="_blank">Ver mais depoimentos</a>
+            </div>
+            <!--end of button-->
+
+        </div>
+        <!--end of content-->
+
+    </div>
+</section>
+<!--end of testimony-->
+
 <?= $v->start("scripts"); ?>
 <script src="<?= asset("js/main.min.js"); ?>"></script>
 <?= $v->end; ?>

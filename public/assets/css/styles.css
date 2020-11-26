@@ -43,6 +43,8 @@ html {
   html h3 {
     font-size: 4.6rem;
     font-family: 'Playfair Display', serif !important; }
+  html header {
+    width: 100%; }
 
 .d-none {
   display: none; }
@@ -471,8 +473,6 @@ html {
   margin: 0;
   padding: 10rem 0; }
   #galeria .gallery__header {
-    width: 100%;
-    display: inline-block;
     margin-bottom: 4.5rem; }
     #galeria .gallery__header h1 {
       margin: 0 0 1.6rem 0;
@@ -517,5 +517,63 @@ html {
         height: 100%;
         object-fit: cover;
         object-position: center; }
+
+#testimony {
+  margin: 0;
+  padding: 10rem 0;
+  background-color: var(--color-background-gray-2); }
+  #testimony .testimony__header {
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #testimony .testimony__header h1 {
+      margin-bottom: 1rem;
+      font-size: 4.6rem;
+      text-align: center;
+      color: var(--color-theme-secondary); }
+  #testimony .testimony__content > p {
+    margin-bottom: 6rem;
+    font-size: 1.8rem;
+    text-align: center; }
+  #testimony .testimony__content .testimony__content__row {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 3rem; }
+    #testimony .testimony__content .testimony__content__row .testimony__content__row__card {
+      margin: 0;
+      padding: 3.2rem;
+      background-color: var(--color-theme-white);
+      box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.15); }
+      #testimony .testimony__content .testimony__content__row .testimony__content__row__card .testimony__content__row__card__image {
+        margin-bottom: 2.8rem;
+        display: flex;
+        justify-content: center; }
+      #testimony .testimony__content .testimony__content__row .testimony__content__row__card .testimony__content__row__card__name {
+        margin-bottom: .8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        #testimony .testimony__content .testimony__content__row .testimony__content__row__card .testimony__content__row__card__name p {
+          margin-bottom: .8rem;
+          font-family: 'Playfair Display', serif !important;
+          font-size: 1.6rem;
+          font-weight: 700;
+          text-align: center;
+          color: var(--color-theme-secondary); }
+      #testimony .testimony__content .testimony__content__row .testimony__content__row__card .testimony__content__row__card__text p {
+        font-size: 1.2rem;
+        text-align: center; }
+      #testimony .testimony__content .testimony__content__row .testimony__content__row__card .testimony__content__row__card__text .text-bold {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        font-weight: 600; }
+  #testimony .testimony__content .testimony__content__button {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 /*# sourceMappingURL=styles.css.map */
