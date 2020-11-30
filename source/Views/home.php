@@ -7,24 +7,24 @@
 <h1 class="d-none">João&Maria Assessoria e Organização de eventos sociais</h1>
 
 <!-- hero -->
-<section id="home">
+<section id="hero">
     <div class="container">
         <!-- header -->
-        <header class="home__header">
+        <header class="hero__header">
             <h1>Somos uma empresa de Assessoria & Organização de eventos sociais!</h1>
         </header>/
         <!-- end of header -->
 
         <!-- content -->
-        <div class="home__content">
+        <div class="hero__content">
             <p>Ajudamos os nossos clientes a construir e realizar os seus sonhos!</p>
-            <img src="<?= asset("img/vt-divisor.svg"); ?>" alt="Vetor Divisor">
+            <img src="<?= asset("img/vt-divisor.svg"); ?>" loading="lazy" alt="Vetor Divisor">
             <a href="#quem-somos" class="btn btn--outline-theme-white">Saiba  mais</a>
         </div>
         <!-- end ofc content -->
 
         <!-- scroll down -->
-        <div class="home__scroll">
+        <div class="hero__scroll">
             <a href="#quem-somos">
                 <span></span>
             </a>
@@ -32,7 +32,7 @@
         <!-- end of scroll down -->
     </div>
 </section>
-<!-- end of home -->
+<!-- end of hero -->
 
 <!--about-->
 <section id="quem-somos">
@@ -43,7 +43,7 @@
 
         <!--image-->
         <div class="about__header__image">
-            <img src="<?= asset("img/vt-divider.svg"); ?>" alt="Vetor Divisor">            
+            <img src="<?= asset("img/vt-divider.svg"); ?>" loading="lazy" alt="Vetor Divisor">            
         </div>
         <!--end of image-->
     </header>
@@ -75,7 +75,7 @@
 
         <!--image-->
         <div class="about__content__image">
-            <img src="<?= asset("img/img-about.jpg"); ?>" alt="Imagem de apresentação João&Maria">
+            <img src="<?= asset("img/img-about.jpg"); ?>" loading="lazy" alt="Imagem de apresentação João&Maria">
         </div>
         <!--end of image-->
     </div>
@@ -89,7 +89,7 @@
     <div class="container">
         <!--image-->
         <div class="history__image">
-            <img src="<?= asset("img/img-historia.jpg") ?>" alt="História da João&Maria">
+            <img src="<?= asset("img/img-historia.jpg") ?>" loading="lazy" alt="História da João&Maria">
         </div>
         <!--end of image-->
 
@@ -146,42 +146,42 @@
 
             <!--card-->
             <article class="specialties__grid__card">
-                <img src="<?= asset("img/vt-casamento.svg"); ?>" alt="Vetor Casamento">
+                <img src="<?= asset("img/vt-casamento.svg"); ?>" loading="lazy" alt="Vetor Casamento">
                 <h2>Casamentos</h2>
             </article>
             <!--end of card-->
 
             <!--card-->
             <article class="specialties__grid__card">
-                <img src="<?= asset("img/vt-debutante.svg"); ?>" alt="Vetor Debutante">
+                <img src="<?= asset("img/vt-debutante.svg"); ?>" loading="lazy" alt="Vetor Debutante">
                 <h2>Debutante</h2>
             </article>
             <!--end of card-->
 
             <!--card-->
             <article class="specialties__grid__card">
-                <img src="<?= asset("img/vt-bodas.svg"); ?>" alt="Vetor Bodas">
+                <img src="<?= asset("img/vt-bodas.svg"); ?>" loading="lazy" alt="Vetor Bodas">
                 <h2>Bodas</h2>
             </article>
             <!--end of card-->
 
             <!--card-->
             <article class="specialties__grid__card">
-                <img src="<?= asset("img/vt-aniversario.svg"); ?>" alt="Vetor Aniversário">
+                <img src="<?= asset("img/vt-aniversario.svg"); ?>" loading="lazy" alt="Vetor Aniversário">
                 <h2>Aniversário</h2>
             </article>
             <!--end of card-->
 
             <!--card-->
             <article class="specialties__grid__card">
-                <img src="<?= asset("img/vt-corporativo.svg"); ?>" alt="Vetor Corporativo">
+                <img src="<?= asset("img/vt-corporativo.svg"); ?>" loading="lazy" alt="Vetor Corporativo">
                 <h2>Corporativo</h2>
             </article>
             <!--end of card-->
 
             <!--card-->
             <article class="specialties__grid__card">
-                <img src="<?= asset("img/vt-despedida.svg"); ?>" alt="Vetor Despedida de Solteiro">
+                <img src="<?= asset("img/vt-despedida.svg"); ?>" loading="lazy" alt="Vetor Despedida de Solteiro">
                 <h2>Despedida de<br>Solteiro(a)</h2>
             </article>
             <!--end of card-->
@@ -202,7 +202,7 @@
 
             <!--image-->
             <div class="services__header__image">
-                <img src="<?= asset("img/vt-divider.svg"); ?>" alt="Vetor Divisor">            
+                <img src="<?= asset("img/vt-divider.svg"); ?>" loading="lazy" alt="Vetor Divisor">            
             </div>
             <!--end of image-->
 
@@ -218,7 +218,7 @@
 
                 <!--article-->
                 <article class="services__content__grid__article">
-                    <img src="<?= asset("img/img-assessoria-completa.jpg"); ?>" alt="João&Maria - Serviços - Assessoria Completa">
+                    <img src="<?= asset("img/img-assessoria-completa.jpg"); ?>" loading="lazy" alt="João&Maria - Serviços - Assessoria Completa">
 
                     <!--content-->
                     <div class="services__content__grid__article__content">
@@ -237,7 +237,7 @@
 
                 <!--article-->
                 <article class="services__content__grid__article">
-                    <img src="<?= asset("img/img-assessoria-personalizada.jpg"); ?>" alt="João&Maria - Serviços - Assessoria Personalizada">
+                    <img src="<?= asset("img/img-assessoria-personalizada.jpg"); ?>" loading="lazy" alt="João&Maria - Serviços - Assessoria Personalizada">
 
                     <!--content-->
                     <div class="services__content__grid__article__content">
@@ -256,7 +256,7 @@
 
                 <!--article-->
                 <article class="services__content__grid__article">
-                    <img src="<?= asset("img/img-assessoria-final.jpg"); ?>" alt="João&Maria - Serviços - Assessoria Final">
+                    <img src="<?= asset("img/img-assessoria-final.jpg"); ?>" loading="lazy" alt="João&Maria - Serviços - Assessoria Final">
 
                     <!--content-->
                     <div class="services__content__grid__article__content">
@@ -275,7 +275,7 @@
 
                 <!--image-->
                 <div class="services__content__grid__image">
-                    <img src="<?= asset("img/img-services.jpg"); ?>" alt="João&Maria - Serviços">
+                    <img src="<?= asset("img/img-services.jpg"); ?>" loading="lazy" alt="João&Maria - Serviços">
                 </div>
                 <!--end of image-->
 
@@ -305,7 +305,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-01.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-01.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-01.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -313,7 +313,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-02.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-02.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-02.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -321,7 +321,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-03.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-03.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-03.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -329,7 +329,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-04.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-04.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-04.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -337,7 +337,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-05.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-05.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-05.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -345,7 +345,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-06.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-06.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-06.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -353,7 +353,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-07.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-07.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-07.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -361,7 +361,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-08.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-08.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-08.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -369,7 +369,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-09.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-09.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-09.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -377,7 +377,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-10.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-10.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-10.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -385,7 +385,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-11.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-11.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-11.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -393,7 +393,7 @@
             <!--image-->
             <div class="gallery__content__image">
                 <a href="<?= asset("img/img-evento-12.jpg"); ?>" data-lightbox="gallery">
-                    <img src="<?= asset("img/img-evento-12.jpg"); ?>" alt="Galeria João&Maria - Evento">
+                    <img src="<?= asset("img/img-evento-12.jpg"); ?>" loading="lazy" alt="Galeria João&Maria - Evento">
                 </a>
             </div>
             <!--end of image-->
@@ -415,7 +415,7 @@
 
             <!--image-->
             <div class="testimony__header__image">
-                <img src="<?= asset("img/vt-divider.svg"); ?>" alt="Vetor Divisor">            
+                <img src="<?= asset("img/vt-divider.svg"); ?>" loading="lazy" alt="Vetor Divisor">            
             </div>
             <!--end of image-->
         </header>
@@ -433,14 +433,14 @@
 
                     <!--image-->
                     <div class="testimony__content__row__card__image">
-                        <img src="<?= asset("img/img-depoimento-01.jpg"); ?>" alt="Depoimento João&Maria - Casamento Élide e Douglas">
+                        <img src="<?= asset("img/img-depoimento-01.jpg"); ?>" loading="lazy" alt="Depoimento João&Maria - Casamento Élide e Douglas">
                     </div>
                     <!--end of image-->
 
                     <!--name-->
                     <div class="testimony__content__row__card__name">
                         <p>Noiva Élide<br>(Casamento Élide e Douglas)</p>
-                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" alt="Vetor Divisor">    
+                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" loading="lazy" alt="Vetor Divisor">    
                     </div>
                     <!--end of name-->
 
@@ -459,14 +459,14 @@
 
                     <!--image-->
                     <div class="testimony__content__row__card__image">
-                        <img src="<?= asset("img/img-depoimento-02.jpg"); ?>" alt="Depoimento João&Maria - Casamento Adriana e Cesar">
+                        <img src="<?= asset("img/img-depoimento-02.jpg"); ?>" loading="lazy" alt="Depoimento João&Maria - Casamento Adriana e Cesar">
                     </div>
                     <!--end of image-->
 
                     <!--name-->
                     <div class="testimony__content__row__card__name">
                         <p>Noiva Adriana<br>(Casamento Adriana e Cesar)</p>
-                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" alt="Vetor Divisor">    
+                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" loading="lazy" alt="Vetor Divisor">    
                     </div>
                     <!--end of name-->
 
@@ -485,14 +485,14 @@
 
                     <!--image-->
                     <div class="testimony__content__row__card__image">
-                        <img src="<?= asset("img/img-depoimento-03.jpg"); ?>" alt="Depoimento João&Maria - Casamento Luciana e Carlos">
+                        <img src="<?= asset("img/img-depoimento-03.jpg"); ?>" loading="lazy" alt="Depoimento João&Maria - Casamento Luciana e Carlos">
                     </div>
                     <!--end of image-->
 
                     <!--name-->
                     <div class="testimony__content__row__card__name">
                         <p>Noiva Luciana<br>(Casamento Luciana e Carlos)</p>
-                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" alt="Vetor Divisor">    
+                        <img src="<?= asset("img/vt-divider-small.svg"); ?>" loading="lazy" alt="Vetor Divisor">    
                     </div>
                     <!--end of name-->
 
