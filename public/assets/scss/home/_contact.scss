@@ -34,22 +34,22 @@
 
         form{
             width: 100%;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(calc(50% - 30px), 1fr));
-            gap: 2rem;
-
-
-            .contact__form__input{
-                @include marginSet;
-                
-                input{
-                    padding: .8rem;
-                    width: 100%;
-                    border: none !important;
-                    border-bottom: 1px solid 
+            .contact__form__group{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(calc(50% - 20px), 1fr));
+                gap: 2rem;
+            }
+            
+            .contact__form__textArea{
+                margin-top: 2rem;
+            }
+            
+            .contact__form__button{
+                margin-top: 6rem;
+                text:{
+                    align: center;
                 }
             }
-
         }
     }
 }

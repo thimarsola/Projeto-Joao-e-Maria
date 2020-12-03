@@ -1,0 +1,92 @@
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 50% !important;
+    }
+
+    /*header*/
+    #header {
+        .header__navbar {
+            .header__navbar__section {
+                .header__navbar__section__nav {
+                    display: none;
+                }
+
+                .header__navbar__section__toggle {
+                    margin: 0;
+                    padding: 0;
+                    width: 32px;
+                    height: 32px;
+
+                    .header__navbar__section__toggle__bar {
+                        background-color: var(--color-theme-primary);
+                        height: 3px;
+                        width: 100%;
+                        margin: 6px auto;
+                        transition-duration: .3s;
+                    }
+                }
+            }
+
+            .on {
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 100vw;
+                height: 100vh;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: var(--color-theme-primary);
+
+                .header__navbar__section__nav {
+                    display: block;
+                }
+
+                .header__navbar__section__toggle {
+                    position: absolute;
+                    top: 18px;
+                    right: 18px;
+
+
+                    &>.header__navbar__section__toggle__bar:nth-child(1) {
+                        transform: rotate(45deg) translate(9px, 9px);
+                    }
+
+                    &>.header__navbar__section__toggle__bar:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    &>.header__navbar__section__toggle__bar:nth-child(3) {
+                        transform: rotate(-45deg) translate(4px, -4px);
+                    }
+
+                    .header__navbar__section__toggle__bar {
+                        background-color: var(--color-theme-white);
+                        transition: background-color .3s ease-in-out;
+                    }
+                }
+
+                .header__navbar__section__nav {
+                    ul {
+                        flex-direction: column;
+
+                        li {
+
+                            a {
+                                display: block;
+                                line-height: 6rem;
+                                transition-duration: .5s;
+                                font-size: 3rem !important;
+                                color: var(--color-theme-white) !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*end of header*/
+}

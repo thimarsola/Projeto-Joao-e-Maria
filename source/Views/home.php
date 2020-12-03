@@ -522,6 +522,7 @@
 </section>
 <!--end of testimony-->
 
+<!--contact-->
 <section id="contato">
     <div class="container">
 
@@ -536,64 +537,68 @@
         <div class="contact__form">
             <form action="post">
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input type="text" name="name" placeholder="Insira seu nome e sobrenome">
-                </div>
-                <!--end of input-->
+                <!--group-->
+                <div class="contact__form__group">
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input type="text" name="name" placeholder="Insira seu nome e sobrenome">
+                    </div>
+                    <!--end of input-->
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input type="email" name="mail" placeholder="Insira seu melhor e-mail">
-                </div>
-                <!--end of input-->
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input type="email" name="mail" placeholder="Insira seu melhor e-mail">
+                    </div>
+                    <!--end of input-->
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input list="event" name="eventList" placeholder="Qual o tipo de evento?">
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input list="event" name="eventList" placeholder="Qual o tipo de evento?">
 
-                    <datalist id="event">
-                        <option value="Casamento">
-                        <option value="Debutante">
-                        <option value="Evento Corporativo">
-                        <option value="Outros">
-                    </datalist>
-                </div>
-                <!--end of input-->
+                        <datalist id="event">
+                            <option value="Casamento">
+                            <option value="Debutante">
+                            <option value="Evento Corporativo">
+                            <option value="Outros">
+                        </datalist>
+                    </div>
+                    <!--end of input-->
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input type="text" name="whatsapp" placeholder="Whatsapp">
-                </div>
-                <!--end of input-->
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input type="text" name="whatsapp" placeholder="Whatsapp">
+                    </div>
+                    <!--end of input-->
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input type="date" name="date" placeholder="Qual a data do evento?">
-                </div>
-                <!--end of input-->
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input type="date" name="date" placeholder="Qual a data do evento?">
+                    </div>
+                    <!--end of input-->
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input type="text" name="phone" placeholder="Telefone">
-                </div>
-                <!--end of input-->
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input type="text" name="phone" placeholder="Telefone">
+                    </div>
+                    <!--end of input-->
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input type="text" name="amountPeople" placeholder="Qual a quantidade de pessoas? (Quantidade total, adultos, crianças, etc)">
-                </div>
-                <!--end of input-->
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input type="text" name="amountPeople" placeholder="Qual a quantidade de pessoas? (Quantidade total, adultos, crianças, etc)">
+                    </div>
+                    <!--end of input-->
 
-                <!--input-->
-                <div class="contact__form__input">
-                    <input type="text" name="place" placeholder="Qual o local do evento? (Cerimônia e recepção)">
+                    <!--input-->
+                    <div class="contact__form__group__input">
+                        <input type="text" name="place" placeholder="Qual o local do evento? (Cerimônia e recepção)">
+                    </div>
+                    <!--end of input-->
                 </div>
-                <!--end of input-->
+                <!--end of group-->
 
                 <!--text area-->
                 <div class="contact__form__textArea">
-                    <textarea name="message" rows="4" placeholder="Observações"></textarea>
+                    <textarea name="message" rows="4" cols="50" placeholder="Observações:"></textarea>
                 </div>
                 <!--end of text area-->
 
@@ -610,6 +615,13 @@
 
     </div>
 </section>
+<!--end of contact-->
+
+<!--map-->
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.8339503450393!2d-46.515752085291105!3d-23.64611698464079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce695bf7c3e40b%3A0x2c043b01d6bfa862!2sJo%C3%A3o%26Maria%20Assessoria%20de%20Eventos!5e0!3m2!1sen!2sbr!4v1607023076620!5m2!1sen!2sbr" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<!--end of map-->
 
 <?= $v->start("scripts"); ?>
 <script src="<?= asset("js/main.min.js"); ?>"></script>
