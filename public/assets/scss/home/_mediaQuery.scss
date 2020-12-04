@@ -18,7 +18,7 @@
                     height: 32px;
 
                     .header__navbar__section__toggle__bar {
-                        background-color: var(--color-theme-primary);
+                        background-color: var(--color-theme-white);
                         height: 3px;
                         width: 100%;
                         margin: 6px auto;
@@ -27,7 +27,7 @@
                 }
             }
 
-            .on {
+            .header__navbar--open {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -39,7 +39,9 @@
                 justify-content: center;
                 align-items: center;
 
-                background-color: var(--color-theme-primary);
+                background-color: rgba(darken(#87D1DE, 15%), .95);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
 
                 .header__navbar__section__nav {
                     display: block;
@@ -47,25 +49,28 @@
 
                 .header__navbar__section__toggle {
                     position: absolute;
-                    top: 18px;
-                    right: 18px;
+                    top: 46px;
+                    right: 32px;
 
 
                     &>.header__navbar__section__toggle__bar:nth-child(1) {
                         transform: rotate(45deg) translate(9px, 9px);
+                        transition: .3s ease-in-out all;
                     }
 
                     &>.header__navbar__section__toggle__bar:nth-child(2) {
                         opacity: 0;
+                        transition: .3s ease-in-out all;
                     }
 
                     &>.header__navbar__section__toggle__bar:nth-child(3) {
                         transform: rotate(-45deg) translate(4px, -4px);
+                        transition: .3s ease-in-out all;
                     }
 
                     .header__navbar__section__toggle__bar {
                         background-color: var(--color-theme-white);
-                        transition: background-color .3s ease-in-out;
+                        transition: .3s ease-in-out all;
                     }
                 }
 

@@ -39,15 +39,53 @@
                 grid-template-columns: repeat(auto-fit, minmax(calc(50% - 20px), 1fr));
                 gap: 2rem;
             }
-            
+
             .contact__form__textArea{
                 margin-top: 2rem;
             }
-            
+
             .contact__form__button{
                 margin-top: 6rem;
                 text:{
                     align: center;
+                }
+            }
+        }
+
+        .contact__form__status{
+
+            p{
+                margin-top: 6rem;
+                text:{
+                    align: center;
+                }
+            }
+
+            &--success{
+                margin: 0;
+                padding: 1.6rem;
+                border: 2px solid green;
+                border-radius: 5px;
+
+                p{
+                    color: green;
+                    font:{
+                        weight: 600;
+                    }
+                }
+            }
+
+            &--error{
+                margin: 0;
+                padding: 1.6rem;
+                border: 2px solid red;
+                border-radius: 5px;
+
+                p{
+                    color: red;
+                    font:{
+                        weight: 600;
+                    }
                 }
             }
         }

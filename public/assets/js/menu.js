@@ -9,13 +9,13 @@ menuToggle.addEventListener("click", () => {
 
     document.body.style.overflow = show ? "hidden" : "initial";
 
-    menuSection.classList.toggle("on", show);
+    menuSection.classList.toggle("header__navbar--open", show);
     show = !show;
 });
 
 menuItem.forEach((item) => {
     item.addEventListener('click', () => {
-        menuSection.classList.toggle('.on');
+        menuSection.classList.toggle('header__navbar--open');
         document.body.style.overflow = "initial";
     });
 });

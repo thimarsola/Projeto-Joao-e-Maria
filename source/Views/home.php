@@ -12,7 +12,7 @@
         <!-- header -->
         <header class="hero__header">
             <h1>Somos uma empresa de Assessoria & Organização de eventos sociais!</h1>
-        </header>/
+        </header>
         <!-- end of header -->
 
         <!-- content -->
@@ -31,6 +31,14 @@
         </div>
         <!-- end of scroll down -->
     </div>
+
+    <!--whatsapp-->
+    <div id="whatsapp" class="whatsapp__button">
+        <a href="https://api.whatsapp.com/send?phone=5511976994744&text=Ol%C3%A1%20Jo%C3%A3o%26Maria%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20assessoria!" target="_blank">
+            <img src="<?= asset("img/vt-whatsapp.svg"); ?>" loading="lazy" alt="João&Maria - Whatsapp">
+        </a>
+    </div>
+    <!--end of whatsapp-->
 </section>
 <!-- end of hero -->
 
@@ -535,25 +543,25 @@
 
         <!--form-->
         <div class="contact__form">
-            <form action="post">
+            <form method="POST" autocomplete="off">
 
                 <!--group-->
                 <div class="contact__form__group">
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="text" name="name" placeholder="Insira seu nome e sobrenome">
+                        <input type="text" name="name" placeholder="Insira seu nome e sobrenome" required>
                     </div>
                     <!--end of input-->
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="email" name="mail" placeholder="Insira seu melhor e-mail">
+                        <input type="email" name="mail" placeholder="Insira seu melhor e-mail" required>
                     </div>
                     <!--end of input-->
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input list="event" name="eventList" placeholder="Qual o tipo de evento?">
+                        <input list="event" name="eventList" placeholder="Qual o tipo de evento?" required>
 
                         <datalist id="event">
                             <option value="Casamento">
@@ -566,31 +574,31 @@
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="text" name="whatsapp" placeholder="Whatsapp">
+                        <input type="text" name="whatsapp" placeholder="Whatsapp" required>
                     </div>
                     <!--end of input-->
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="date" name="date" placeholder="Qual a data do evento?">
+                        <input type="date" name="date" placeholder="Qual a data do evento?" required>
                     </div>
                     <!--end of input-->
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="text" name="phone" placeholder="Telefone">
+                        <input type="text" name="phone" placeholder="Telefone" required>
                     </div>
                     <!--end of input-->
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="text" name="amountPeople" placeholder="Qual a quantidade de pessoas? (Quantidade total, adultos, crianças, etc)">
+                        <input type="text" name="amountPeople" placeholder="Qual a quantidade de pessoas? (Quantidade total, adultos, crianças, etc)" required>
                     </div>
                     <!--end of input-->
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="text" name="place" placeholder="Qual o local do evento? (Cerimônia e recepção)">
+                        <input type="text" name="place" placeholder="Qual o local do evento? (Cerimônia e recepção)" required>
                     </div>
                     <!--end of input-->
                 </div>
@@ -604,12 +612,65 @@
 
                 <!--button-->
                 <div class="contact__form__button">
-                    <button type="submit" class="btn btn--outline-theme-primary">Enviar Contato</button>
+                    <button type="submit" name="submit" value="submit" class="btn btn--outline-theme-primary">Enviar Contato</button>
                 </div>
                 <!--end of button-->
-
-
             </form>
+
+            <!--status-->
+            <div class="contact__form__status">
+                
+            <?php
+            require_once (dirname(__DIR__, 2) . '/vendor/autoload.php');
+
+            use Source\Support\Email;
+            
+            if(isset($_POST['submit'])){
+                $subjectForm = "Solicitação de Orçamento";
+                $nameForm = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+                $mailForm = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
+                $eventForm = filter_var($_POST['event'], FILTER_SANITIZE_STRING);
+                $whatsappForm = filter_var($_POST['whatsapp'], FILTER_SANITIZE_STRING);
+                $dateForm = filter_var($_POST['date'], FILTER_SANITIZE_STRING);
+                $phoneForm = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
+                $amountPeopleForm = filter_var($_POST['amountPeople'], FILTER_SANITIZE_STRING);
+                $placeForm = filter_var($_POST['place'], FILTER_SANITIZE_STRING);
+                $messageForm = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
+
+                $email = new Email();
+
+                $email->add(
+                    $subjectForm,
+                    "<h1>Mensagem de Orçamento - Site João&Maria</h1>
+                    <br>
+                    <p>Olá " . site('title') . ",</p>
+                    <p>Me chamo <strong>{$nameForm}</strong>, estou entrando em contato através do formulário do site.</p>
+                    <br>
+                    <p>Aqui estão os meus dados para o orçamento</p>
+                    <p><strong>E-mail:</strong> <br>{$mailForm}</p>
+                    <p><strong>Telefone:</strong> <br>{$phoneForm}</p>
+                    <p><strong>Tipo de evento:</strong> <br>{$eventForm}</p>
+                    <p><strong>Whatsapp:</strong> <br>{$whatsappForm}</p>
+                    <p><strong>Data do evento:</strong> <br>{$dateForm}</p>
+                    <p><strong>Telefone:</strong> <br>{$phoneForm}</p>
+                    <p><strong>Quantidade de pessoas:</strong> <br>{$amountPeopleForm}</p>
+                    <p><strong>Local do evento:</strong> <br>{$dateForm}</p>
+                    <br>
+                    <p><strong>Observações:</strong><p>
+                    <p>$messageForm</p>",
+                    site('title'),
+                    "tmarsola94@gmail.com"
+                    )->send();
+                    
+                    if (!$email->error()){
+                        echo    "<div class = 'contact__form__status--success'><p>Sua mensagem foi enviada com sucesso!</p></div>";
+                    }else{
+                        echo    "<div class = 'contact__form__status--success'><p>Erro ao enviar sua mensagem, tente novamente!<br>(" . $email->error()->getMessage() . ")</p></div>";                        
+                    }
+            }?>
+
+            </div>
+            <!--end of status-->
         </div>
         <!--end of form-->
 

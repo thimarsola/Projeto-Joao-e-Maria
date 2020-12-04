@@ -27,7 +27,6 @@
     <body id="home">
 
         <!--header-->
-        <!--header-->
         <header id="header">
             <div class="header__navbar">
                 <?php if ($v->section("navbar")): ?>

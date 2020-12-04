@@ -205,7 +205,8 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  z-index: 100; }
+  z-index: 100;
+  transition: .5s ease-in-out all; }
   #header .header__navbar {
     margin: 0;
     padding: 1rem 0; }
@@ -254,17 +255,13 @@ html {
                 transform-origin: left;
                 transition: .5s linear all; }
 
-.hide {
-  display: none;
-  transition: display .5s linear; }
-
-.dark {
-  background-color: rgba(0, 0, 0, 0.8) !important;
+.header--active {
+  background-color: rgba(75, 186, 206, 0.95) !important;
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px); }
-  .dark img {
-    height: 70px !important;
-    transition: height .3s ease-in-out; }
+  -webkit-backdrop-filter: blur(4px);
+  transition: .5s ease-in-out all; }
+  .header--active img {
+    height: 8rem !important; }
 
 #hero {
   margin: 0;
@@ -338,6 +335,42 @@ html {
   100% {
     opacity: 0%;
     top: 70%; } }
+  #hero #whatsapp {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    margin: 0;
+    width: 7rem;
+    height: 7rem;
+    z-index: 2000; }
+  #hero .whatsapp__button {
+    display: none;
+    transition: display .3s ease-in-out; }
+  #hero .whatsapp__button--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25d366;
+    border-radius: 10rem;
+    text-align: center;
+    transition: display .3s ease-in-out all;
+    transition: background .3s ease-in-out all;
+    animation: zoom 1.5s infinite; }
+    #hero .whatsapp__button--active:hover {
+      background-color: #1fb055;
+      animation: none;
+      transition: background .3s ease-in-out; }
+    #hero .whatsapp__button--active a {
+      display: block; }
+      #hero .whatsapp__button--active a img {
+        height: 4.2rem !important; }
+@keyframes zoom {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
 #quem-somos {
   margin-top: 10rem; }
   #quem-somos .about__header h1 {
@@ -595,7 +628,12 @@ html {
     grid-gap: 1.5rem; }
     #galeria .gallery__content .gallery__content__image {
       transform: scale(1);
-      transition: transform .2s ease-in-out; }
+      transition: transform .2s ease-in-out;
+      filter: blur(0);
+      transition: filter .3s ease-in-out; }
+      #galeria .gallery__content .gallery__content__image:hover {
+        filter: blur(2px);
+        transition: filter .3s ease-in-out; }
       #galeria .gallery__content .gallery__content__image:nth-child(even):hover {
         transform: scale(0.95) rotate(1deg);
         transition: transform .2s ease-in-out; }
@@ -707,6 +745,25 @@ html {
       #contato .contact__form form .contact__form__button {
         margin-top: 6rem;
         text-align: center; }
+    #contato .contact__form .contact__form__status p {
+      margin-top: 6rem;
+      text-align: center; }
+    #contato .contact__form .contact__form__status--success {
+      margin: 0;
+      padding: 1.6rem;
+      border: 2px solid green;
+      border-radius: 5px; }
+      #contato .contact__form .contact__form__status--success p {
+        color: green;
+        font-weight: 600; }
+    #contato .contact__form .contact__form__status--error {
+      margin: 0;
+      padding: 1.6rem;
+      border: 2px solid red;
+      border-radius: 5px; }
+      #contato .contact__form .contact__form__status--error p {
+        color: red;
+        font-weight: 600; }
 
 .map iframe {
   width: 100%;
@@ -726,12 +783,12 @@ html {
     width: 32px;
     height: 32px; }
     #header .header__navbar .header__navbar__section .header__navbar__section__toggle .header__navbar__section__toggle__bar {
-      background-color: var(--color-theme-primary);
+      background-color: var(--color-theme-white);
       height: 3px;
       width: 100%;
       margin: 6px auto;
       transition-duration: .3s; }
-  #header .header__navbar .on {
+  #header .header__navbar .header__navbar--open {
     position: absolute;
     top: 0;
     left: 0;
@@ -740,25 +797,30 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-theme-primary); }
-    #header .header__navbar .on .header__navbar__section__nav {
+    background-color: rgba(75, 186, 206, 0.95);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); }
+    #header .header__navbar .header__navbar--open .header__navbar__section__nav {
       display: block; }
-    #header .header__navbar .on .header__navbar__section__toggle {
+    #header .header__navbar .header__navbar--open .header__navbar__section__toggle {
       position: absolute;
-      top: 18px;
-      right: 18px; }
-      #header .header__navbar .on .header__navbar__section__toggle > .header__navbar__section__toggle__bar:nth-child(1) {
-        transform: rotate(45deg) translate(9px, 9px); }
-      #header .header__navbar .on .header__navbar__section__toggle > .header__navbar__section__toggle__bar:nth-child(2) {
-        opacity: 0; }
-      #header .header__navbar .on .header__navbar__section__toggle > .header__navbar__section__toggle__bar:nth-child(3) {
-        transform: rotate(-45deg) translate(4px, -4px); }
-      #header .header__navbar .on .header__navbar__section__toggle .header__navbar__section__toggle__bar {
+      top: 46px;
+      right: 32px; }
+      #header .header__navbar .header__navbar--open .header__navbar__section__toggle > .header__navbar__section__toggle__bar:nth-child(1) {
+        transform: rotate(45deg) translate(9px, 9px);
+        transition: .3s ease-in-out all; }
+      #header .header__navbar .header__navbar--open .header__navbar__section__toggle > .header__navbar__section__toggle__bar:nth-child(2) {
+        opacity: 0;
+        transition: .3s ease-in-out all; }
+      #header .header__navbar .header__navbar--open .header__navbar__section__toggle > .header__navbar__section__toggle__bar:nth-child(3) {
+        transform: rotate(-45deg) translate(4px, -4px);
+        transition: .3s ease-in-out all; }
+      #header .header__navbar .header__navbar--open .header__navbar__section__toggle .header__navbar__section__toggle__bar {
         background-color: var(--color-theme-white);
-        transition: background-color .3s ease-in-out; }
-    #header .header__navbar .on .header__navbar__section__nav ul {
+        transition: .3s ease-in-out all; }
+    #header .header__navbar .header__navbar--open .header__navbar__section__nav ul {
       flex-direction: column; }
-      #header .header__navbar .on .header__navbar__section__nav ul li a {
+      #header .header__navbar .header__navbar--open .header__navbar__section__nav ul li a {
         display: block;
         line-height: 6rem;
         transition-duration: .5s;

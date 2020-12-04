@@ -39,6 +39,13 @@
         .gallery__content__image{
             transform: scale(1);
             transition: transform .2s ease-in-out;
+            filter: blur(0);
+            transition: filter .3s ease-in-out;
+
+            &:hover{
+                filter: blur(2px);
+                transition: filter .3s ease-in-out;
+            }
 
             &:nth-child(even):hover{
                 transform: scale(.95) rotate(1deg);

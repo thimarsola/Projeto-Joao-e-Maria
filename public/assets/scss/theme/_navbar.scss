@@ -4,6 +4,7 @@
     padding: 0;
     width: 100%;
     z-index: 100;
+    transition: .5s ease-in-out all;
 
     .header__navbar{
         margin: 0;
@@ -74,18 +75,14 @@
     }
 }
 
-.hide{
-    display: none;
-    transition: display .5s linear;
-}
-
-.dark{
-    background-color: rgba(0,0,0, .8) !important;
+.header--active{
+    background-color: rgba(darken(#87D1DE, 15%), .95) !important;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-
+    
     img{
-        height: 70px !important;
-        transition: height .3s ease-in-out;
+        height: 8rem !important;
     }
+
+    transition: .5s ease-in-out all;
 }
