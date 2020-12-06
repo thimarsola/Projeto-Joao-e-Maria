@@ -18,4 +18,7 @@ $minJs->add(dirname(__DIR__, 1) . "/public/assets/js/lightbox.js");
 $minJs->add(dirname(__DIR__, 1) . "/public/assets/js/background-scroll.js");
 $minJs->add(dirname(__DIR__, 1) . "/public/assets/js/scroll.js");
 $minJs->add(dirname(__DIR__, 1) . "/public/assets/js/stick.js");
+$minJs->add(dirname(__DIR__, 1) . "/public/assets/js/jquery.js");
+$minJs->add(dirname(__DIR__, 1) . "/public/assets/js/sweetalert2.all.js");
+$minJs->add(dirname(__DIR__, 1) . "/public/assets/js/request.js");
 $minJs->minify(dirname(__DIR__, 1) . "/public/assets/js/main.min.js");

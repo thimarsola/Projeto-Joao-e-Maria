@@ -41,7 +41,6 @@
         <?= $v->section("stylesheet"); ?>
     </head>
     <body id="home">
-        <h1 class="d-none">João&Maria Assessoria e Organização de eventos sociais</h1>
         <!--header-->
         <header id="header">
             <div class="header__navbar">
@@ -231,7 +230,7 @@
                 <div class="container">
                     <p>Desenvolvido por <a href="<?= DEV["url"]; ?>" target="_blank" title="Especialistas em Marketig Digital"><strong><?= DEV["name"]; ?></strong></a></p>
 
-                    <a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2F<?= SITE["domain"]; ?>" title="Tecnologia W3C"><img src="<?= asset("img/vt-validator.svg"); ?>" loading="lazy" alt="Tecnologia W3C">W3C Validator</a>
+                    <a href="https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https%3A%2F%2F<?= SITE["domain"]; ?>" target="_blank" title="Tecnologia W3C"><img src="<?= asset("img/vt-validator.svg"); ?>" loading="lazy" alt="Tecnologia W3C">W3C Validator</a>
                 </div>
             </div>
             <!--end of developer-->

@@ -541,7 +541,7 @@
 
         <!--form-->
         <div class="contact__form">
-            <form action="<?= url(); ?>" method="POST" autocomplete="off">
+            <form id="form" action="" method="POST" enctype="multipart/form-data" autocomplete="off">
 
                 <!--group-->
                 <div class="contact__form__group">
@@ -578,7 +578,7 @@
 
                     <!--input-->
                     <div class="contact__form__group__input">
-                        <input type="date" name="date" placeholder="Qual a data do evento?" required>
+                        <input type="date" name="date" required>
                     </div>
                     <!--end of input-->
 
@@ -617,56 +617,6 @@
 
             <!--status-->
             <div class="contact__form__status">
-                
-            <?php
-            require_once (dirname(__DIR__, 2) . '/vendor/autoload.php');
-
-            use Source\Support\Email;
-            
-            if(isset($_POST['submit'])){
-                $subjectForm = "Solicitação de Orçamento";
-                $nameForm = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
-                $mailForm = filter_var($_POST['email'], FILTER_SANITIZE_STRING);
-                $eventForm = filter_var($_POST['event'], FILTER_SANITIZE_STRING);
-                $whatsappForm = filter_var($_POST['whatsapp'], FILTER_SANITIZE_STRING);
-                $dateForm = filter_var($_POST['date'], FILTER_SANITIZE_STRING);
-                $phoneForm = filter_var($_POST['phone'], FILTER_SANITIZE_STRING);
-                $amountPeopleForm = filter_var($_POST['amountPeople'], FILTER_SANITIZE_STRING);
-                $placeForm = filter_var($_POST['place'], FILTER_SANITIZE_STRING);
-                $messageForm = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
-
-                $email = new Email();
-
-                $email->add(
-                    $subjectForm,
-                    "<h1>Mensagem de Orçamento - Site João&Maria</h1>
-                    <br>
-                    <p>Olá " . site('title') . ",</p>
-                    <p>Me chamo <strong>{$nameForm}</strong>, estou entrando em contato através do formulário do site.</p>
-                    <br>
-                    <p>Aqui estão os meus dados para o orçamento</p>
-                    <p><strong>E-mail:</strong> <br>{$mailForm}</p>
-                    <p><strong>Telefone:</strong> <br>{$phoneForm}</p>
-                    <p><strong>Tipo de evento:</strong> <br>{$eventForm}</p>
-                    <p><strong>Whatsapp:</strong> <br>{$whatsappForm}</p>
-                    <p><strong>Data do evento:</strong> <br>{$dateForm}</p>
-                    <p><strong>Telefone:</strong> <br>{$phoneForm}</p>
-                    <p><strong>Quantidade de pessoas:</strong> <br>{$amountPeopleForm}</p>
-                    <p><strong>Local do evento:</strong> <br>{$dateForm}</p>
-                    <br>
-                    <p><strong>Observações:</strong><p>
-                    <p>$messageForm</p>",
-                    site('title'),
-                    "tmarsola94@gmail.com"
-                    )->send();
-                    
-                    if (!$email->error()){
-                        echo    "<div class = 'contact__form__status--success'><p>Sua mensagem foi enviada com sucesso!</p></div>";
-                    }else{
-                        echo    "<div class = 'contact__form__status--success'><p>Erro ao enviar sua mensagem, tente novamente!<br>(" . $email->error()->getMessage() . ")</p></div>";                        
-                    }
-            }?>
-
             </div>
             <!--end of status-->
         </div>
