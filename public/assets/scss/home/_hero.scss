@@ -1,10 +1,10 @@
 #hero {
     @include marginSet;
-    width          : 100%;
-    height         : 100vh;
-    background     : {
-        image   : url("../img/img-home-casamento.jpg");
-        size    : 150%;
+    width: 100%;
+    height: 100vh;
+    background: {
+        image: url("../img/img-home-casamento.jpg");
+        size: 150%;
         position: center;
         attachment: fixed
     }
@@ -106,8 +106,8 @@
 
     #whatsapp{
         position: fixed;
-        right: 3rem;
-        bottom: 3rem;
+        right: 1.5rem;
+        bottom: 1.5rem;
         margin: 0;
         width: 7rem;
         height: 7rem;
@@ -120,6 +120,7 @@
     }
 
     .whatsapp__button--active{
+        opacity: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -131,15 +132,16 @@
             align: center;
         }
         transition: display .3s ease-in-out all;
-        transition: background .3s ease-in-out all;
         animation: zoom 1.5s infinite;
+        transition: .3s ease-in-out all;
 
         &:hover{
+            opacity: 100%;
             background:{
                 color: darken(#25d366, 8%);
             }
             animation: none;
-            transition: background .3s ease-in-out;
+            transition: .3s ease-in-out all;
         }
 
         a{

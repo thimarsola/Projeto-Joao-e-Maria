@@ -26,6 +26,7 @@
         @include marginSet;
         width: 100%;
         display: flex;
+        flex-wrap: wrap;
         
         .about__content__text{
             flex-basis: 65%;

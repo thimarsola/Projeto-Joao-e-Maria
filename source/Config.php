@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /**
  * DEVELOPER
@@ -60,20 +60,20 @@ define("SOCIAL",[
  * MAIL CONNECT
  */
 define("MAIL", [
-    "host" => "mail.domain.com.br",
+    "host" => "smtp.sendgrid.net",
     "port" => "587",
-    "user" => "sender@domain.com.br",
-    "passwd" => "password",
-    "from_name" => "Website Domain",
-    "from_email" => "domain@domain.com.br"
+    "user" => "apikey",
+    "passwd" => "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",
+    "from_name" => "João&Maria Assessoria",
+    "from_email" => "thiago.marsola@goognet.com.br"
 ]);
 
 /**
  * REGION
  */
 define("REGION", [
-   "region" => "xxx",
-    "placename" => "xxx",
-    "position" => "xxx",
-    "icbm" => "xxx"
+   "region" => "BR-SP",
+    "placename" => "Santo Andr&eacute;",
+    "position" => "-23.647323;-46.524186",
+    "icbm" => "-23.647323;-46.524186"
 ]);

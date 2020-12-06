@@ -1,5 +1,4 @@
 #especialidades{
-    /*padding-bottom: 10rem;*/
     z-index: -2;
 
     &::before{
@@ -85,7 +84,7 @@
         @include margin;
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
         gap: 3rem;
 
         .specialties__grid__card{
@@ -94,6 +93,10 @@
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+            
+            img{
+                max-height: 12rem;
+            }
 
             h2{
                 margin-top: 2rem;

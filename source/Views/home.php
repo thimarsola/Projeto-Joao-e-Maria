@@ -4,8 +4,6 @@
 <link rel="stylesheet" href="<?= asset("css/style.min.css"); ?>" />
 <?= $v->end; ?>
 
-<h1 class="d-none">João&Maria Assessoria e Organização de eventos sociais</h1>
-
 <!-- hero -->
 <section id="hero">
     <div class="container">
@@ -543,7 +541,7 @@
 
         <!--form-->
         <div class="contact__form">
-            <form method="POST" autocomplete="off">
+            <form action="<?= url(); ?>" method="POST" autocomplete="off">
 
                 <!--group-->
                 <div class="contact__form__group">

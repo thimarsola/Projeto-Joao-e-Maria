@@ -337,8 +337,8 @@ html {
     top: 70%; } }
   #hero #whatsapp {
     position: fixed;
-    right: 3rem;
-    bottom: 3rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
     margin: 0;
     width: 7rem;
     height: 7rem;
@@ -347,6 +347,7 @@ html {
     display: none;
     transition: display .3s ease-in-out; }
   #hero .whatsapp__button--active {
+    opacity: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,12 +355,13 @@ html {
     border-radius: 10rem;
     text-align: center;
     transition: display .3s ease-in-out all;
-    transition: background .3s ease-in-out all;
-    animation: zoom 1.5s infinite; }
+    animation: zoom 1.5s infinite;
+    transition: .3s ease-in-out all; }
     #hero .whatsapp__button--active:hover {
+      opacity: 100%;
       background-color: #1fb055;
       animation: none;
-      transition: background .3s ease-in-out; }
+      transition: .3s ease-in-out all; }
     #hero .whatsapp__button--active a {
       display: block; }
       #hero .whatsapp__button--active a img {
@@ -389,7 +391,8 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     #quem-somos .about__content .about__content__text {
       flex-basis: 65%;
       margin: 0;
@@ -427,6 +430,7 @@ html {
   padding: 10rem 0; }
   #history .container {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: stretch; }
@@ -467,7 +471,6 @@ html {
         margin-top: 7rem; }
 
 #especialidades {
-  /*padding-bottom: 10rem;*/
   z-index: -2; }
   #especialidades::before {
     margin: 0;
@@ -526,7 +529,7 @@ html {
     padding: 10rem 0;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 3rem; }
     #especialidades .specialties__grid .specialties__grid__card {
       width: 100%;
@@ -534,6 +537,8 @@ html {
       flex-direction: column;
       justify-content: flex-start;
       align-items: center; }
+      #especialidades .specialties__grid .specialties__grid__card img {
+        max-height: 12rem; }
       #especialidades .specialties__grid .specialties__grid__card h2 {
         margin-top: 2rem;
         font-family: 'Raleway', sans-serif !important;
@@ -566,39 +571,46 @@ html {
         width: auto;
         margin: 0 auto;
         display: block; }
-  #servicos .services__content p {
-    text-align: center; }
-  #servicos .services__content .services__content__grid {
-    padding: 8rem 0;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
-    gap: 3rem; }
-    #servicos .services__content .services__content__grid .services__content__grid__article {
-      background-color: var(--color-theme-white);
-      box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.15); }
-      #servicos .services__content .services__content__grid .services__content__grid__article img {
+  #servicos .services__content {
+    width: 100%; }
+    #servicos .services__content p {
+      text-align: center; }
+    #servicos .services__content .services__content__grid {
+      padding: 8rem 0;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
+      gap: 3rem; }
+      #servicos .services__content .services__content__grid .services__content__grid__article {
+        width: 100%;
+        height: auto;
+        background-color: var(--color-theme-white);
+        box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.15); }
+        #servicos .services__content .services__content__grid .services__content__grid__article img {
+          width: 100%;
+          max-height: 30rem;
+          object-fit: cover;
+          object-postion: center; }
+        #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content {
+          width: 100%;
+          margin: 0;
+          padding: 3.2rem; }
+          #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content .services__content__grid__article__content__header h2 {
+            margin-bottom: 2.2rem;
+            padding: 0;
+            font-family: 'Raleway', sans-serif !important;
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: var(--color-theme-secondary);
+            text-align: center; }
+          #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content p {
+            margin: 0;
+            padding: 0;
+            font-size: 1.4rem;
+            text-align: justify; }
+      #servicos .services__content .services__content__grid .services__content__grid__image img {
         width: 100%;
         height: auto; }
-      #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content {
-        margin: 0;
-        padding: 3.2rem; }
-        #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content .services__content__grid__article__content__header h2 {
-          margin-bottom: 2.2rem;
-          padding: 0;
-          font-family: 'Raleway', sans-serif !important;
-          font-size: 2.4rem;
-          font-weight: 400;
-          color: var(--color-theme-secondary);
-          text-align: center; }
-        #servicos .services__content .services__content__grid .services__content__grid__article .services__content__grid__article__content p {
-          margin: 0;
-          padding: 0;
-          font-size: 1.4rem;
-          text-align: justify; }
-    #servicos .services__content .services__content__grid .services__content__grid__image img {
-      width: 100%;
-      height: auto; }
 
 #galeria {
   margin: 0;
@@ -676,7 +688,7 @@ html {
   #testimony .testimony__content .testimony__content__row {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     gap: 3rem; }
     #testimony .testimony__content .testimony__content__row .testimony__content__row__card {
       margin: 0;
@@ -827,6 +839,210 @@ html {
         font-size: 3rem !important;
         color: var(--color-theme-white) !important; }
 
-  /*end of header*/ }
+  /*end of header*/
+  /*about*/
+  #quem-somos .about__content .about__content__text {
+    flex-basis: 58%;
+    padding: 0 5rem; }
+  #quem-somos .about__content .about__content__image {
+    flex-basis: 42%; }
+
+  /*end of about*/
+  /*history*/
+  #history .container .history__image {
+    flex-basis: 50%; }
+  #history .container .history__content {
+    flex-basis: 50%; }
+
+  /*end of history*/
+  /*footer*/
+  .footer__content__row {
+    flex-wrap: wrap; }
+    .footer__content__row__image {
+      flex-basis: 100%;
+      margin-bottom: 3.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .footer__content__row__columns {
+      flex-basis: 100%; }
+      .footer__content__row__columns__card {
+        margin: auto; }
+
+  /*end of footer*/ }
+@media screen and (max-width: 425px) {
+  /*hero*/
+  #hero {
+    background-size: 330%; }
+    #hero .hero__header h1 {
+      font-size: 3.6rem; }
+
+  /*end of hero*/
+  /*about*/
+  #quem-somos .about__content .about__content__text {
+    flex-basis: 100%;
+    padding: 0 5rem; }
+  #quem-somos .about__content .about__content__image {
+    display: none; }
+  #quem-somos::after {
+    height: 20rem;
+    background-position: center; }
+
+  /*end of about*/
+  /*history*/
+  #history .container .history__image {
+    display: none; }
+  #history .container .history__content {
+    order: -1;
+    flex-basis: 100%; }
+
+  /*end of history*/
+  /*specialties*/
+  #especialidades::before {
+    height: 30rem; }
+  #especialidades .specialties__container::before {
+    width: 36rem; }
+  #especialidades .specialties__grid {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); }
+
+  /*end of specialties*/
+  /*services*/
+  #servicos .services__content__grid__image {
+    display: none; }
+
+  /*end of services*/
+  /*contato*/
+  #contato .contact__form form .contact__form__group {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); }
+
+  /*end of contato*/
+  /*footer*/
+  .footer__content__row__image img {
+    width: auto;
+    height: 12rem; }
+  .footer__content__row__columns__card {
+    flex-basis: 50%;
+    margin: 0 !important;
+    padding: 1.6rem; }
+
+  /*end of footer*/ }
+@media screen and (max-width: 375px) {
+  /*footer*/
+  .footer__developer .container {
+    justify-content: center; }
+    .footer__developer .container p {
+      margin-bottom: .8rem;
+      flex-basis: 100%; }
+    .footer__developer .container a {
+      flex-basis: 100%; }
+
+  /*end of footer*/ }
+@media screen and (max-width: 320px) {
+  /*hero*/
+  #hero .hero__header h1 {
+    font-size: 3.2rem; }
+  #hero .container .hero__content p {
+    font-size: 1.8rem; }
+  #hero .container .hero__content img {
+    width: 20rem; }
+
+  /*end of hero*/
+  /*services*/
+  #servicos .services__content .services__content__grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); }
+
+  /*end of services*/
+  /*footer*/
+  .footer__content__row__columns__card {
+    flex-basis: 100%; }
+
+  /*end of footer*/ }
+.footer__content {
+  width: 100%; }
+  .footer__content__row {
+    padding: 3.2rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__content__row__columns {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start; }
+      .footer__content__row__columns__card {
+        max-width: 20rem; }
+        .footer__content__row__columns__card:not(:last-child) {
+          margin-right: 3rem; }
+        .footer__content__row__columns__card:last-child address {
+          transition: transform .3s ease-in-out; }
+          .footer__content__row__columns__card:last-child address:hover {
+            transform: scale(1.1);
+            transition: transform .3s ease-in-out; }
+          .footer__content__row__columns__card:last-child address:nth-child(2) {
+            margin: 0 1.6rem; }
+        .footer__content__row__columns__card__header {
+          margin-bottom: 1.6rem; }
+          .footer__content__row__columns__card__header p {
+            margin-bottom: .8rem;
+            padding: 0;
+            font-size: 1.6rem;
+            font-weight: 600;
+            text-align: center; }
+          .footer__content__row__columns__card__header hr {
+            width: 4rem;
+            height: .2rem;
+            margin: 0 auto;
+            border: none;
+            background-color: var(--color-theme-primary); }
+        .footer__content__row__columns__card__body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center; }
+          .footer__content__row__columns__card__body address, .footer__content__row__columns__card__body p {
+            font-size: 1.2rem; }
+          .footer__content__row__columns__card__body address a {
+            transition: color .3s ease-in-out; }
+            .footer__content__row__columns__card__body address a:hover {
+              color: var(--color-theme-primary);
+              transition: color .3s ease-in-out; }
+.footer__copyright {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: var(--color-background-blue-1);
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-theme-white); }
+.footer__developer {
+  margin: 0;
+  padding: 1rem 0;
+  background-color: var(--color-background-blue-2);
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--color-theme-white); }
+  .footer__developer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    .footer__developer .container p a {
+      display: inline-block; }
+    .footer__developer .container a {
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: color .3s ease-in-out; }
+      .footer__developer .container a:hover {
+        color: #164750;
+        transition: color .3s ease-in-out; }
+      .footer__developer .container a strong {
+        font-weight: 600; }
+      .footer__developer .container a img {
+        margin-right: .8rem; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -94,4 +94,249 @@
         }
     }
     /*end of header*/
+
+    /*about*/
+    #quem-somos{
+        .about__content{
+            .about__content__text{
+                flex-basis: 58%;
+                padding: 0 5rem;
+            }
+
+            .about__content__image{
+                flex-basis: 42%;
+            }
+        }
+    }
+    /*end of about*/
+
+    /*history*/
+    #history{
+        .container{
+            .history__image{
+                flex-basis: 50%;
+            }
+
+            .history__content{
+                flex-basis: 50%;
+            }
+        }
+    }
+    /*end of history*/
+
+    /*footer*/
+    .footer{
+        &__content{
+
+            &__row{
+                flex-wrap: wrap;
+
+                &__image{
+                    flex-basis: 100%;
+                    margin-bottom: 3.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &__columns{
+                    flex-basis: 100%;
+
+                    &__card{
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+    /*end of footer*/
+}
+
+@media screen and (max-width: 425px){
+    /*hero*/
+    #hero{
+        background: {
+            size: 330%;
+        }
+
+        .hero__header{
+            h1{
+                font:{
+                    size: 3.6rem;
+                }
+            }
+        }
+    }
+    /*end of hero*/
+
+    /*about*/
+    #quem-somos{
+        .about__content{
+            .about__content__text{
+                flex-basis: 100%;
+                padding: 0 5rem;
+            }
+
+            .about__content__image{
+                display: none;
+            }
+        }
+
+        &::after{
+            height: 20rem;
+            background:{
+                position: center;
+            }
+        }
+    }
+    /*end of about*/
+
+    /*history*/
+    #history{
+        .container{
+            .history__image{
+                display: none;
+            }
+
+            .history__content{
+                order: -1;
+                flex-basis: 100%;
+            }
+        }
+    }
+    /*end of history*/
+
+    /*specialties*/
+    #especialidades{
+        &::before{
+            height: 30rem;
+        }
+
+        .specialties__container{
+            &::before{
+                width: 36rem;
+            }
+        }
+
+        .specialties__grid{
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        }
+    }
+    /*end of specialties*/
+
+    /*services*/
+    #servicos{
+        .services__content__grid__image{
+            display: none;
+        }
+    }
+    /*end of services*/
+
+    /*contato*/
+    #contato{
+        .contact__form{
+            form{
+                .contact__form__group{
+                    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+                }
+            }
+        }
+    }
+    /*end of contato*/
+
+    /*footer*/
+    .footer{
+        &__content{
+
+            &__row{
+
+                &__image{
+                    img{
+                        width: auto;
+                        height: 12rem;
+                    }
+                }
+
+                &__columns{
+                    &__card{
+                        flex-basis: 50%;
+                        margin: 0 !important;
+                        padding: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    /*end of footer*/
+}
+
+@media screen and (max-width: 375px){
+    /*footer*/
+    .footer{
+        &__developer{
+            .container{
+                justify-content: center;
+                p{
+                    margin-bottom: .8rem;
+                    flex-basis: 100%;
+                }
+
+                a{
+                    flex-basis: 100%;
+                }
+            }
+        }
+    }
+    /*end of footer*/
+}
+
+@media screen and (max-width: 320px){
+    /*hero*/
+    #hero{
+        .hero__header{
+            h1{
+                font:{
+                    size: 3.2rem;
+                }
+            }
+        }
+        .container{
+            .hero__content{
+                p{
+                    font   : {
+                        size: 1.8rem;
+                    }
+                }
+
+                img{
+                    width: 20rem;
+                }
+            }
+        }
+    }
+    /*end of hero*/
+
+    /*services*/
+    #servicos{
+        .services__content{
+            .services__content__grid{
+                grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            }
+        }
+    }
+    /*end of services*/
+
+    /*footer*/
+    .footer{
+        &__content{
+            &__row{
+                &__columns{
+                    &__card{
+                        flex-basis: 100%;
+                    }
+                }
+            }
+        }
+    }
+    /*end of footer*/
 }
