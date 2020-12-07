@@ -12,3 +12,8 @@ $(function(){
    });
 });
 
+$(function(){
+    $("#button").click(function(){
+        $(".contact__form__status--loading").removeClass("d-none");
+    });
+});

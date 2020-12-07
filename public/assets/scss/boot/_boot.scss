@@ -38,7 +38,6 @@ html {
         height: 100vh;
         font  : {
             size: 1.6rem;
-            // weight: $font-light;
         }
         color : var(--color-theme-text);
     }
@@ -88,6 +87,9 @@ html {
         line-height: 1.5;
         transform: scale(1);
         transition: transform .3s ease-in-out;
+        font:{
+            family: 'Raleway', sans-serif !important;
+        }
 
         &::placeholder{
             font:{
@@ -113,7 +115,7 @@ html {
 }
 
 .d-none{
-    display: none;
+    display: none !important;
 }
 
 /*includes*/

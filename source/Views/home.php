@@ -610,13 +610,17 @@
 
                 <!--button-->
                 <div class="contact__form__button">
-                    <button type="submit" name="submit" value="submit" class="btn btn--outline-theme-primary">Enviar Contato</button>
+                    <button id="button" type="submit" name="submit" value="submit" class="btn btn--outline-theme-primary">Enviar Contato</button>
                 </div>
                 <!--end of button-->
             </form>
 
             <!--status-->
             <div class="contact__form__status">
+                
+                <div class="d-none contact__form__status--loading">
+                    <img src="<?= asset("img/vt-spinner.svg"); ?>" alt="Loading">
+                </div>
             </div>
             <!--end of status-->
         </div>

@@ -56,7 +56,8 @@ html {
     border-bottom: 1px solid var(--color-background-gray-3);
     line-height: 1.5;
     transform: scale(1);
-    transition: transform .3s ease-in-out; }
+    transition: transform .3s ease-in-out;
+    font-family: 'Raleway', sans-serif !important; }
     html input::placeholder, html textarea::placeholder {
       font-size: 1.4rem !important; }
     html input:focus, html textarea:focus {
@@ -70,7 +71,7 @@ html {
     background: none; }
 
 .d-none {
-  display: none; }
+  display: none !important; }
 
 /*includes*/
 /*end of includes*/
@@ -757,26 +758,18 @@ html {
       #contato .contact__form form .contact__form__button {
         margin-top: 6rem;
         text-align: center; }
-    #contato .contact__form .contact__form__status p {
-      margin-top: 6rem;
-      text-align: center; }
-    #contato .contact__form .contact__form__status--success {
-      margin: 0;
-      padding: 1.6rem;
-      border: 2px solid green;
-      border-radius: 5px; }
-      #contato .contact__form .contact__form__status--success p {
-        color: green;
-        font-weight: 600; }
-    #contato .contact__form .contact__form__status--error {
-      margin: 0;
-      padding: 1.6rem;
-      border: 2px solid red;
-      border-radius: 5px; }
-      #contato .contact__form .contact__form__status--error p {
-        color: red;
-        font-weight: 600; }
-
+    #contato .contact__form .contact__form__status--loading {
+      margin-top: 3.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #contato .contact__form .contact__form__status--loading img {
+        animation: spin 2s infinite linear; }
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 .map iframe {
   width: 100%;
   min-height: 35rem;

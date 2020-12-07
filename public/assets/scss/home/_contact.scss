@@ -49,44 +49,30 @@
                 text:{
                     align: center;
                 }
+
             }
         }
 
         .contact__form__status{
+            &--loading{
+                margin-top: 3.2rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-            p{
-                margin-top: 6rem;
-                text:{
-                    align: center;
+                img{
+                    animation: spin 2s infinite linear; 
                 }
             }
 
-            &--success{
-                margin: 0;
-                padding: 1.6rem;
-                border: 2px solid green;
-                border-radius: 5px;
-
-                p{
-                    color: green;
-                    font:{
-                        weight: 600;
-                    }
+            @keyframes spin{
+                from{
+                    transform: rotate(0deg);
                 }
-            }
-
-            &--error{
-                margin: 0;
-                padding: 1.6rem;
-                border: 2px solid red;
-                border-radius: 5px;
-
-                p{
-                    color: red;
-                    font:{
-                        weight: 600;
-                    }
+                to{
+                    transform: rotate(360deg);
                 }
+
             }
         }
     }
