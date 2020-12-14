@@ -1,3 +1,14 @@
+@media screen and (max-width: 1024px){
+    /*hero*/
+    #hero{
+        background:{
+            size: 280%;
+            position: 70%;
+        }
+    }
+    /*end of hero*/
+}
+
 @media screen and (max-width: 768px) {
     html {
         font-size: 50% !important;
@@ -95,6 +106,15 @@
     }
     /*end of header*/
 
+    /*hero*/
+    #hero{
+        background:{
+            size: 250%;
+            position: 72%;
+        }
+    }
+    /*end of hero*/
+
     /*about*/
     #quem-somos{
         .about__content{
@@ -156,7 +176,8 @@
     /*hero*/
     #hero{
         background: {
-            size: 330%;
+            size: 350%;
+            position: 62%;
         }
 
         .hero__header{
@@ -271,6 +292,16 @@
 }
 
 @media screen and (max-width: 375px){
+
+    /*hero*/
+    #hero{
+        background:{
+            size: 380%;
+            position: 62%;
+        }
+    }
+    /*end of hero*/
+
     /*footer*/
     .footer{
         &__developer{

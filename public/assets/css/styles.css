@@ -775,6 +775,13 @@ html {
   min-height: 35rem;
   border: none; }
 
+@media screen and (max-width: 1024px) {
+  /*hero*/
+  #hero {
+    background-size: 280%;
+    background-position: 70%; }
+
+  /*end of hero*/ }
 @media screen and (max-width: 768px) {
   html {
     font-size: 50% !important; }
@@ -833,6 +840,12 @@ html {
         color: var(--color-theme-white) !important; }
 
   /*end of header*/
+  /*hero*/
+  #hero {
+    background-size: 250%;
+    background-position: 72%; }
+
+  /*end of hero*/
   /*about*/
   #quem-somos .about__content .about__content__text {
     flex-basis: 58%;
@@ -866,7 +879,8 @@ html {
 @media screen and (max-width: 425px) {
   /*hero*/
   #hero {
-    background-size: 330%; }
+    background-size: 350%;
+    background-position: 62%; }
     #hero .hero__header h1 {
       font-size: 3.6rem; }
 
@@ -920,6 +934,12 @@ html {
 
   /*end of footer*/ }
 @media screen and (max-width: 375px) {
+  /*hero*/
+  #hero {
+    background-size: 380%;
+    background-position: 62%; }
+
+  /*end of hero*/
   /*footer*/
   .footer__developer .container {
     justify-content: center; }

@@ -45,54 +45,54 @@
         <header id="header">
             <div class="header__navbar">
                 <?php if ($v->section("navbar")): ?>
-                    <div class="container">
-                        <!-- brand -->
-                        <a href="<?= url(); ?>" title="Emplacar's">
-                            <img src="<?= asset("img/logo-header.png"); ?>" loading="lazy" alt="Logo - João&Maria Assessoria e Organização de Eventos">
-                        </a>
+                <div class="container">
+                    <!-- brand -->
+                    <a href="<?= url(); ?>" title="Emplacar's">
+                        <img src="<?= asset("img/logo-header.png"); ?>" loading="lazy" alt="Logo - João&Maria Assessoria e Organização de Eventos">
+                    </a>
 
-                        <?= $v->section("navbar"); ?>
-                    </div>
+                    <?= $v->section("navbar"); ?>
+                </div>
 
                 <?php else: ?>
-                    <div class="container">
-                        <!-- brand -->
-                        <a href="<?= url(); ?>" title="Emplacar's">
-                            <img src="<?= asset("img/logo-header.png"); ?>" loading="lazy" alt="Logo - João&Maria Assessoria e Organização de Eventos">
-                        </a>
+                <div class="container">
+                    <!-- brand -->
+                    <a href="<?= url(); ?>" title="Emplacar's">
+                        <img src="<?= asset("img/logo-header.png"); ?>" loading="lazy" alt="Logo - João&Maria Assessoria e Organização de Eventos">
+                    </a>
 
-                        <!-- toggle -->
-                        <div class="header__navbar__section">
-                            <div class="header__navbar__section__toggle">
-                                <div class="header__navbar__section__toggle__bar"></div>
-                                <div class="header__navbar__section__toggle__bar"></div>
-                                <div class="header__navbar__section__toggle__bar"></div>
-                            </div>
-                            <!-- nav -->
-                            <nav class="header__navbar__section__nav">
-                                <h1 class="d-none">Menu de navegação</h1>
-                                <ul>
-                                    <li>
-                                        <a href="#home">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#quem-somos">Quem somos</a>
-                                    </li>
-                                    <li>
-                                        <a href="#especialidades">Especialidades</a>
-                                    </li>
-                                    <li>
-                                        <a href="#servicos">Serviços</a>
-                                    </li>
-                                    <li>
-                                        <a href="#galeria">Galeria</a>
-                                    <li>
-                                        <a href="#contato">Contato</a>
-                                    </li>
-                                </ul>
-                            </nav>
+                    <!-- toggle -->
+                    <div class="header__navbar__section">
+                        <div class="header__navbar__section__toggle">
+                            <div class="header__navbar__section__toggle__bar"></div>
+                            <div class="header__navbar__section__toggle__bar"></div>
+                            <div class="header__navbar__section__toggle__bar"></div>
                         </div>
+                        <!-- nav -->
+                        <nav class="header__navbar__section__nav">
+                            <h1 class="d-none">Menu de navegação</h1>
+                            <ul>
+                                <li>
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#quem-somos">Quem somos</a>
+                                </li>
+                                <li>
+                                    <a href="#especialidades">Especialidades</a>
+                                </li>
+                                <li>
+                                    <a href="#servicos">Serviços</a>
+                                </li>
+                                <li>
+                                    <a href="#galeria">Galeria</a>
+                                <li>
+                                    <a href="#contato">Contato</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
+                </div>
                 <?php endif; ?>
             </div>
         </header>
@@ -110,9 +110,9 @@
             <div class="footer__content">
                 <div class="container">
                     <div class="footer__content__row">
-                        
+
                         <div class="footer__content__row__image">
-                        <img src="<?= asset("img/logo-footer.jpg"); ?>" loading="lazy" alt="Logo - João&Maria Assessoria">
+                            <img src="<?= asset("img/logo-footer.jpg"); ?>" loading="lazy" alt="Logo - João&Maria Assessoria">
                         </div>
 
                         <div class="footer__content__row__columns">
