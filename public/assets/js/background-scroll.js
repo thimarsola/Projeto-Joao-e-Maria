@@ -45,7 +45,7 @@ mediaTablet.addListener(sizeMediaTablet);
 function sizeMediaPhone(mediaPhone){
     if (mediaPhone.matches){
         window.addEventListener('scroll', function () {
-            background.style.backgroundSize = 350 - +window.pageYOffset / 12 + '%';
+            background.style.backgroundSize = 345 - +window.pageYOffset / 12 + '%';
         });
     }
 }

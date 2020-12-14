@@ -779,7 +779,7 @@ html {
   /*hero*/
   #hero {
     background-size: 280%;
-    background-position: 70%; }
+    background-position: 70% 50%; }
 
   /*end of hero*/ }
 @media screen and (max-width: 768px) {
@@ -843,7 +843,7 @@ html {
   /*hero*/
   #hero {
     background-size: 250%;
-    background-position: 72%; }
+    background-position: 72% 50%; }
 
   /*end of hero*/
   /*about*/
@@ -879,8 +879,8 @@ html {
 @media screen and (max-width: 425px) {
   /*hero*/
   #hero {
-    background-size: 350%;
-    background-position: 62%; }
+    background-size: 345%;
+    background-position: 62% 50%; }
     #hero .hero__header h1 {
       font-size: 3.6rem; }
 
@@ -937,7 +937,7 @@ html {
   /*hero*/
   #hero {
     background-size: 380%;
-    background-position: 62%; }
+    background-position: 62% 50%; }
 
   /*end of hero*/
   /*footer*/
